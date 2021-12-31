@@ -24,16 +24,16 @@ export function addWallToLayout(walls, wh, wd, im, em, scene) {
       new BABYLON.Vector2(walljson.x2, walljson.y2)
     );
     const options = {
-      width: wallLength + (wd - 0.01), // wall length + extra length to fill wall gaps
-      height: wh,
-      depth: wd,
-    };
-    const options = {
       width: wallLength,
       width: wallLength + (wd - 0.01), // wall length + extra length to fill wall gaps
       height: wh,
       depth: wd,
     };
+    const wall = new BABYLON.MeshBuilder.CreateBox(
+      walljson.name,
+      options,
+      scene
+    );
 
     var intMat = new BABYLON.StandardMaterial("internalMat", scene);
     intMat.diffuseTexture = new BABYLON.Texture(im, scene);

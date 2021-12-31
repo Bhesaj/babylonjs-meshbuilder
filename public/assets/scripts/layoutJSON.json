@@ -1,4 +1,9 @@
-@@ -7,10 +7,58 @@
+{
+    "floorWidth": 50,
+    "floorLength": 50,
+    "floorMaterial": "https://storage.googleapis.com/files.renderdraw.us/renderings/public/gltf/verticalFarm/blurry-floor_tiles_06_diff_2k.jpeg",
+    "internalMaterial": "https://files.renderdraw.us/temp%26trash/WALLPAPER.png",
+    "externalMaterial": "https://files.renderdraw.us/temp%26trash/BRICK.png",
     "wallDepth": 0.1,
     "wallHeight": 9,
     "walls": [{
