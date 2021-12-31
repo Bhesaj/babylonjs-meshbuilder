@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Demo</title>
+
+    <!-- libraries CDN -->
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.js"></script>
+    <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.min.js"></script>
+  </head>
+
+  <body>
+    <div id="BlackBlur" class="blurBG"></div>
+    <canvas id="renderCanvas" touch-action="none"></canvas>
+    <div id="loadingScreen">
+      <div class="loadingWrapper">
+        <div class="loadingContent">
+          <img id="loadingLogo" src="assets/images/1484.gif" />
+          <p id="loadingtext"></p>
+        </div>
+      </div>
+    </div>
+    <div id="controls">
+      <div class="textFooter">
+        <input
+          type="button"
+          value="Remove Wall"
+          id="removeButton"
+        />
+      </div>
+    </div>
+  </body>
+
+  <!-- main -->
+  <script type="module" src="assets/scripts/scene.js"></script>
+  </script>
+</html>
